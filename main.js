@@ -5,11 +5,7 @@ const hamburger = document.getElementById("hamburger")
 hamburger.addEventListener("click", () => {
     // Toggle the menu to slide in/out
     navMenu.classList.toggle("left-[0]") 
-    navMenu.classList.toggle("left-[-100%]")
-
-    // Toggle between menu icon and close icon
-    hamburger.classList.toggle('ri-menu-4-fill')
-    hamburger.classList.toggle('ri-close-line')
+    hamburger.classList.toggle('ri-close-large-line')
 }) 
 
 navLink.forEach(link => {

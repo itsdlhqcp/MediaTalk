@@ -135,19 +135,6 @@
   --tw-content: '';
 }
 
-
-/* Remove focus outline and caret */
-* {
-  outline: none;
-  caret-color: transparent;
-}
-
-/* For input and text fields, remove the text cursor */
-input, textarea {
-  caret-color: transparent; /* Hides the blinking cursor */
-}
-
-
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -643,10 +630,6 @@ video {
   top: 0px;
 }
 
-.left-\[\]{
-  left: ;
-}
-
 .z-50{
   z-index: 50;
 }
@@ -718,6 +701,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-yellow-500{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
 .opacity-90{
   opacity: 0.9;
 }
@@ -742,6 +730,38 @@ body{
   cursor: default;
 }
 
+section{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 540px){
+  section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+h1{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 540px){
+  h1{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1180px){
+  h1{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 .nav-link{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -760,6 +780,20 @@ button, a, input, nav-link {
 
 #hamburger {
   cursor: default;
+}
+
+/* Remove focus outline and caret */
+
+* {
+  outline: none;
+  caret-color: transparent;
+}
+
+/* For input and text fields, remove the text cursor */
+
+input, textarea {
+  caret-color: transparent;
+  /* Hides the blinking cursor */
 }
 
 @media (min-width: 340px){
@@ -783,10 +817,6 @@ button, a, input, nav-link {
     position: static;
   }
 
-  .lg\:flex{
-    display: flex;
-  }
-
   .lg\:hidden{
     display: none;
   }
@@ -808,3 +838,4 @@ button, a, input, nav-link {
     background-color: transparent;
   }
 }
+  
