@@ -3,3 +3,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    @apply bg-green-950 text-white font-Jost tracking-wider;
+    cursor: default;
+}
+
+.nav-link {
+    @apply text-lg font-bold duration-300;
+}
+
+.nav-link:hover {
+    @apply text-yellow-500;
+} 
+
+
+button, a, input, nav-link {
+    cursor: default; 
+}
+
+
+#hamburger {
+    cursor: default; 
+}

@@ -4,56 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <!--FAV-ICON-->
   <link rel="icon" type="image/png" href="assets/img/favicon.ico">
 
   <!--Remix-ICON-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!--Swippers - CSS-->
+  <!--Tailwind CSS-->
   <link rel="stylesheet" href="./output.css"/>
   <link href="./output.css" rel="stylesheet">
   <title>MTalk || MediaTalk</title>
-  
+
 </head>
 <body>
    <!--Header-->
-    <header id="navbar">
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Lobster sm:text-2xl">IndorePlants</div>
+       
+            <!-- Hamburger Icon -->
+            <div class="text-xl sm:text-3xl z-50 lg:hidden">
+                <i class="ri-menu-4-fill" id="hamburger"></i>
+            </div>
+        </nav>
 
+        <!-- Navigation Menu -->
+        <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+            <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#popular" class="nav-link">Popular</a></li>
+                <li><a href="#review" class="nav-link">Review</a></li>
+            </ul>  
+
+            <!-- Decorative Images -->
+               <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                   <img src="assets/img/leaf-1.png" alt="leaf_image" class="w-32"/>
+                </div>
+               <div class="absolute -top-5 left-5 rotate-90 opacity-90 lg:hidden">
+                  <img src="assets/img/leaf-2.png" alt="leaf_image" class="w-32"/>
+               </div>
+           </div>
     </header>
 
     <main>
-        <!--~~~~~~~~~~~~~~~~HOME~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section id="home">
-        </section>
-   
+         <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home"></section>
+         <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
+        <section id="about"></section>
+         <!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
+        <section id="Popular"></section>
+        <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+        <section id="review"></section>
+    </main>
 
-      <!--~~~~~~~~~~~~~~~~SERVICES~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div> 
+    <footer>
+         <!-- newsletter -->
+        
+        <!-- social icon -->
 
-      </div>
+        <!-- content -->
 
-            <!--~~~~~~~~~~~~~~~~ABOUT US~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!-- copyright -->
 
-            <section id="about"> 
+        <!-- floral image -->
+    </footer>
 
-            </section>
+     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
 
-            <!--~~~~~~~~~~~~~~~~Popular~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
 
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
 
-            <section id="Popular"> 
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
 
-            </section>
-
-              <!--~~~~~~~~~~~~~~~~Review~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-              <section id="review"> 
-
-              </section>
-   </main>
-
+    <script src="main.js"></script>
 </body>
 </html>
