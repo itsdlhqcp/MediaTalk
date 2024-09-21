@@ -10,7 +10,8 @@ module.exports = {
     },
     extend: {},
     fontFamily: {
-
+        Jost: ["Jost", "sans-serif"],
+        Lobster: ["Lobster", "sans-serif"]
     },
     container: {
       center: true, 
